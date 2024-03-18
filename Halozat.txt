@@ -1,0 +1,23 @@
+Miért kell az IP cím,mkor ott a MAC?
+Mert nem hierachikus!!!!
+
+IP 32 bites
+8-8-8-8bit  8=oktet
+2 a 8adikon
+0-255 (256)
+11111111
+|
+ez 2 a 7ediken		128 
+ |
+ ez 2 a 6odikon		 64
+			192
+
+az alhálózati maszkban az egyesek utáni 0 után nincsenek 1esek
+11110000.
+Ha az utolsó bit 1-es, akkor páratlan!
+A /24 az hány 1-es van a maszban :)
+IPv6 10::1  az a sok nullát tölti ki, de csak 1 lehet a :: !
+16 bites hextettek
+
+Subneten a Ipv6 prefixe: a /64
+fe80:....ez a 192....

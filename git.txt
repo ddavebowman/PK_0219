@@ -28,16 +28,16 @@ git clone URLgit
 
 git diff HEAD 
 git diff filevév//amíg nincs szpadon
-git diff --stage
+git diff --staged
 git diff --cached filenev
 
 git reset //le a szpadrol
 git checkout -- a.txt  //vissza változtatások
 
 
-git branch NÉV -új létrehozás
+git branch kettes -új létrehozás
 git branch -ellenőrzöm melyiken vagyok
-git checkout NÉV - átlépek a megadott branch-re
+git checkout kettes - átlépek a megadott branch-re
 
 most egy file törlés, ha kell -f v -rf 
 ekkor a szpadra kell tenni
@@ -47,6 +47,14 @@ vissza a Masterre >> ott megvan
 git merge NÉV -összefűzés
 git branch -d NÉV branch törlés
 
-
-
+----------------------------
+git bash indít.
+Ha már beléptem:
+git config --global user.email  ezzel ellenőrzöm az emailt
+git config --global user.name ezzel ellen. a f.nevet.
+átírok egy file-t (mentem)
+git status (mutatja mit módosítottam-ez nem kell amugy)
+git add file (c.txt)
+git commit -m "ide írok megjegyzést"
+git push (kész felkerült)
 

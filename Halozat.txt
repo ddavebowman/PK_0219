@@ -23,3 +23,7 @@ Subneten a Ipv6 prefixe: a /64
 fe80:....ez a 192....
 
 A web serverem legyem DMZ, az különüljön el a többi gépemtől.
+
+Ms Mouse without borders setup
+
+Slkálázás méter növelése teljesítmény esés nélkül.

@@ -22,4 +22,4 @@ IPv6 10::1  az a sok nullát tölti ki, de csak 1 lehet a :: !
 Subneten a Ipv6 prefixe: a /64
 fe80:....ez a 192....
 
-A web serverem legyem DMZ, az különüljön el a többi gépemet.
+A web serverem legyem DMZ, az különüljön el a többi gépemtől.

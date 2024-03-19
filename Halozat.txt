@@ -27,3 +27,5 @@ A web serverem legyem DMZ, az különüljön el a többi gépemtől.
 Ms Mouse without borders setup
 
 Slkálázás méter növelése teljesítmény esés nélkül.
+
+Fizikai topológia/logikai topológia a hibajavításhoz kell.

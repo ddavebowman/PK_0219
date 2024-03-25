@@ -29,3 +29,11 @@ Ms Mouse without borders setup
 Slkálázás méter növelése teljesítmény esés nélkül.
 
 Fizikai topológia/logikai topológia a hibajavításhoz kell.
+
+Application LAYER - fogaldja az adatfolyamot
+PRESENTATION LAYER - Titkosítás kódolás, tömörítés, stb.
+SESSION - A szükséges adatcseréhez kapcsolat 
+Transport - datagrammokat hoz létre
+NETWORK - 
+DATA LINK - 
+PHISICAL - fogadja a datalinktől az adatot, átadja a hardware-nek.

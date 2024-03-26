@@ -37,3 +37,23 @@ Transport - datagrammokat hoz létre
 NETWORK - 
 DATA LINK - 
 PHISICAL - fogadja a datalinktől az adatot, átadja a hardware-nek.
+
+LLC - ez a driver
+1818byte a
+
+1 frame szerkezete:
+lan header |packet| lan trailer ből lesz
+wan header |packet| wan trailer
+
+HEADER                        DATA    TRAILER
+frame start+cím+típus+control| adat| hiba keresés+frame stop
+
+Nework		Nework Layer
+Datalink	LLC
+		802.3 MAC(Media Access Control) sublayer
+Phisical	
+
+Mac cím szerkezete: 24bit
+BIA-Burn In Address
+
+ARP=Address Resolution Protocol

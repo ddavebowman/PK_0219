@@ -2,6 +2,7 @@ Miért kell az IP cím,mkor ott a MAC?
 Mert nem hierachikus!!!!
 
 IP 32 bites
+
 8-8-8-8bit  8=oktet
 2 a 8adikon
 0-255 (256)
@@ -11,6 +12,8 @@ ez 2 a 7ediken		128
  |
  ez 2 a 6odikon		 64
 			192
+
+Ha 8. szám 1-es, akkor páratlan a szám.
 
 az alhálózati maszkban az egyesek utáni 0 után nincsenek 1esek
 11110000.
@@ -22,6 +25,10 @@ IPv6 10::1  az a sok nullát tölti ki, de csak 1 lehet a :: !
 Subneten a Ipv6 prefixe: a /64
 fe80:....ez a 192....
 
+::1   ez a localhost
+
+EMIATT NEM KELL NAT!
+
 A web serverem legyem DMZ, az különüljön el a többi gépemtől.
 
 Ms Mouse without borders setup
@@ -30,13 +37,16 @@ Slkálázás méter növelése teljesítmény esés nélkül.
 
 Fizikai topológia/logikai topológia a hibajavításhoz kell.
 
-Application LAYER - fogaldja az adatfolyamot
-PRESENTATION LAYER - Titkosítás kódolás, tömörítés, stb.
-SESSION - A szükséges adatcseréhez kapcsolat 
-Transport - datagrammokat hoz létre
-NETWORK - 
-DATA LINK - 
-PHISICAL - fogadja a datalinktől az adatot, átadja a hardware-nek.
+7 Application LAYER - fogaldja az adatfolyamot
+6 PRESENTATION LAYER - Titkosítás kódolás, tömörítés, stb.
+5 SESSION - A szükséges adatcseréhez kapcsolat 
+4 Transport - (TCP/UDP)datagrammokat hoz létre, alkalmazások között eljusson, szegmenálás/összeállítás/alkalmazás
+                       destport sourceport  ->  dest port sourceport
+TCP segmens  socket= (21 port  1305         ->  80 port 1099)
+
+3 NETWORK - 
+2 DATA LINK - 
+1 PHISICAL - fogadja a datalinktől az adatot, átadja a hardware-nek.
 
 LLC - ez a driver
 1818byte a
@@ -53,7 +63,13 @@ Datalink	LLC
 		802.3 MAC(Media Access Control) sublayer
 Phisical	
 
-Mac cím szerkezete: 24bit
-BIA-Burn In Address
+Mac cím szerkezete: 48bit 16-os sz.rendszerben.
 
+BIA-Burn In Address
 ARP=Address Resolution Protocol
+
+NAT=network address traslation
+
+Dual-stack (IPV4 és IPV6 is)
+NAT64 Router
+IPV6 3 féle címzés: Unicast, multicast, anycast

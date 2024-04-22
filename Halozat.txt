@@ -91,3 +91,7 @@ Network Portion		   Host Portion
 GUEST VLAN  ha vendég jön, ne lásson rá a netemre.
 
 A 0 a hálózati cím a 255 a szórási cím
+
+DHCP - dinamikus Host CP
+SMB - Server Message Block
+
